@@ -12,3 +12,5 @@ progress_bar(0, len(numbers))
 for i, x in enumerate(numbers):
     progress_bar(i + 1, len(numbers))
     math.factorial(x)
+    if i == len(numbers):
+        print()
