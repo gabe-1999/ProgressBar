@@ -2,7 +2,6 @@ import math
 
 def progress_bar(progress, total):
     percent = 100 * (progress / float(total))
-    total / 50 
     bar = "\u2588" * int((percent / 100) * 50) + "-" * (50 - int((percent / 100) * 50))
     print(f"\r|{bar}| {percent:.2f}", end="\r")
     if progress == total:
